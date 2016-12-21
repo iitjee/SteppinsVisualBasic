@@ -1,0 +1,35 @@
+/*
+
+
+
+*/
+
+- VB6 (an older pre-.NET version of the VisualBasic is not taught in this course)
+- VB .NET (aka VB7) released in 2002 which is the first OOP successor to VB6
+- VB11 (release in 2012)
+- VBA (VisualBasic Application not taught in this course)
+- VBScript (Interpreted language like JS supported in earlier versions of IE)
+
+* What can you build?
+- can build Desktop apps with WinForms adn WPF
+- Windows store apps (for win8 and winRT)
+- Windows Phone Apps
+- Web applications with ASP.NET
+- Windows Communication Foundation(WCF) services
+
+* Starting with BASIC
+- designed in 1964
+- stands for Beginners' All Purpose Symbolic Instruction Code
+- For non-CSE students
+
+* VB.NET
+- Runs on top of the .NET framework
+- VB .NET (aka VB7) released in 2002 which is the first OOP successor to VB6
+
+* VB is a "managed language"
+- i.e Compiled to bytecode in .NET framework, projected to native code in WinRT
+- Can only be executed by a supporting runtime (CLR, WinRT)
+- Automatic memory management and garbage collection.
+
+* VisualBasic vs C#
+VB looks more like English (like 'and' for &&) and has built-in functions. It's NOT case-sensitive.
