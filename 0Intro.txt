@@ -33,3 +33,6 @@
 
 * VisualBasic vs C#
 VB looks more like English (like 'and' for &&) and has built-in functions. It's NOT case-sensitive.
+No semi-colons required
+A line can be split into two by putting an underscore at end of first line
+C, C++, Java, C# is a static language whereas VB can be referred as both static and dynamic language(i.e type-inference)
