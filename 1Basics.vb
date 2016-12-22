@@ -2,8 +2,7 @@
 
 - Run without Debugging
 - Console.WriteLine("Hello " + myNumberVariable.ToString)
-
-
+- No curly braces. Indentation as in Python
 */
 
 - variables: 
@@ -45,6 +44,10 @@ VariantType  (special data type that can contain any kind of data except fixed-l
 
     ' Default to Double.
     Public Const DefaultDouble As Double = 54.3345612
+    
+    Dim myString As String = "Hello World"
+    
+    Dim myDate As Date = DateValue("November 29, 2016")
 
     ' Force constant to be type Char.
     Public Const MyCharacter As Char = "a"c
@@ -68,7 +71,13 @@ To make the previous example work, you can append the D type character to the li
 Dim MyDecimal As Decimal = 100000000000000000000D
 
 
-
+/* Class Variables aka Fields   */
+Public Class Person
+    Public FirstName As String
+    Public LastName As String
+    Public Age As Integer
+    Public DOB As Date
+End Class
 
 
 
