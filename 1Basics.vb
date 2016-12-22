@@ -1,9 +1,9 @@
-/*
+'''
 
 - Run without Debugging
 - Console.WriteLine("Hello " + myNumberVariable.ToString)
 - No curly braces. Indentation as in Python
-*/
+'''
 
 - variables: 
 can't start with a number. can start with alphabets and underscore. also case insensitive
@@ -33,9 +33,13 @@ Dim value2 = value1 + 10
 Starts with '
 
 - Literals
-Boolean(depends on platform), String((depends on platform)), Short(Int16-2 bytes), Integer(Int32-4 bytes), Double(8), Decimal(16)
-Char(2), Date(8), Long(Int64-8bytes), Single(4), Byte(1)
-UInteger(UInt32-4 bytes), ULong(UInt64-8 bytes)
+Boolean(depends on platform)
+Short(Int16-2 bytes), UShort(Int16-2 bytes)
+Integer(Int32-4 bytes), UInteger(UInt32-4 bytes)
+Long(Int64-8bytes), ULong(Int64-8bytes)
+Char(2), Date(8), String((depends on platform)),
+Byte(1), Single(4), Double(8), Decimal(16)
+
 Object(4bytes on 32b platform and 8 bytes on 64b platform)
 VariantType  (special data type that can contain any kind of data except fixed-length String data)
 
@@ -69,6 +73,15 @@ The error results from the representation of the literal. The Decimal data type 
 You can coerce a literal to a particular data type in two ways: by appending a type character to it(=>at end), or by placing it within enclosing characters(=>at beginning and end).
 To make the previous example work, you can append the D type character to the literal, which causes it to be represented as a Decimal:
 Dim MyDecimal As Decimal = 100000000000000000000D
+
+- Overflows
+Don't make any overflow else you get a run time error
+Try
+    myValue+=1
+    Console.WriteLine(myValue)
+Catch ex As Exception
+    Output(ex.Message)
+End Try
 
 
 /* Class Variables aka Fields   */
