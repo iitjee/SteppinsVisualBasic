@@ -1,9 +1,37 @@
 '''
 
+- x++ doesn't work, use x+=1
+
 - Run without Debugging
 - Console.WriteLine("Hello " + myNumberVariable.ToString)
+- ToString() is sometimes called implicitly
+Dim intValue As Integer = 55
+Dim strValue As String = intValue
+
 - No curly braces. Indentation as in Python
+- All numeric datatypes hava a Parse() method
+-No multiline comment in Vb!
+
+- 23 Mod 2 (% operator ion other langs)
 '''
+
+Comparison Operators
+x = y
+x <> y
+x<y x<=y
+
+Comparing Objects: (use Is and IsNot)
+Dim Reference1 as Object = New Object()
+Dim Reference2 = Reference1
+If Reference1 Is Reference2 Then            'True
+    ..
+End If
+
+Comparing Object Types:(Use TypeOf and Is)
+Dim MyString as String = New String("HellO!")
+If TypeOf MyString Is System.String Then        'True
+    ...
+End If
 
 - variables: 
 can't start with a number. can start with alphabets and underscore. also case insensitive
