@@ -2,7 +2,8 @@
 
 - x++ doesn't work, use x+=1
 
-- Run without Debugging
+- Run without Debugging (ctrl+f5)
+- Run with Debuggin (F5) -> 'click break to get teh breakpoint at error
 - Console.WriteLine("Hello " + myNumberVariable.ToString)
 - ToString() is sometimes called implicitly
 Dim intValue As Integer = 55
@@ -13,11 +14,18 @@ Dim strValue As String = intValue
 -No multiline comment in Vb!
 
 - 23 Mod 2 (% operator ion other langs)
+
+- Arrays:
+Dim numbers As Integer() = {1, 2, 3} 'Integer() represents array
+
+- Constants:
+Const ADD As String = "Add", 
+    SUBTRACT As String = "Subtract"1
 '''
 
 Comparison Operators
 x = y
-x <> y
+x <> y      'or use x Not = y
 x<y x<=y
 
 Comparing Objects: (use Is and IsNot)
@@ -32,6 +40,15 @@ Dim MyString as String = New String("HellO!")
 If TypeOf MyString Is System.String Then        'True
     ...
 End If
+
+- Boolean Operators
+If x=1 And y=2 Then
+    ..
+End If
+'Unlike in other languages, And and Or operators in VB don't short ckt like in other langs
+' Even if first expression is false, VB will continue ot evavluate the remaining ones
+' To short ckt use, AndElse and OrElse operators
+
 
 - variables: 
 can't start with a number. can start with alphabets and underscore. also case insensitive
